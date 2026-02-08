@@ -1,0 +1,19 @@
+[project]
+name = "langchain-mcp-adapters"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-openai>=1.1.7",
+    "langgraph>=1.0.8",
+    "python-dotenv>=1.2.1",
+]
+
+[dependency-groups]
+dev = [
+    "langchain-mcp-adapters",
+]
+
+[tool.uv.sources]
+langchain-mcp-adapters = { workspace = true }
